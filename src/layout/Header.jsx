@@ -10,7 +10,7 @@ export default function Header() {
     { to: "/", label: "Accueil", end: true },
     { to: "/about", label: "À propos" },
     { to: "/experiences", label: "Expériences" },
-    { to: "/skills", label: "Compétences" },
+    { to: "/competences", label: "Compétences" },
     { to: "/projects", label: "Projets" },
     { to: "/certifications", label: "Certifications" },
     { to: "/contact", label: "Contact" },
