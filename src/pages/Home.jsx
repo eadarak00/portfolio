@@ -1,3 +1,4 @@
+import Certifications from "../components/Certifications";
 import FeaturedProjects from "../components/FeaturedProjects";
 import MainHero from "../components/MainHero";
 import Stack from "../components/Stack";
@@ -9,6 +10,7 @@ export default function HomePage() {
       <MainHero/>
       <Stack/>
       <FeaturedProjects/>
+      <Certifications/>
     </main>
   );
 }
