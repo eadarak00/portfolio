@@ -71,9 +71,13 @@ export default function MainHero() {
               <button className="btn-primary flex items-center gap-2">
                 Voir mes projets <ExternalLink className="w-4 h-4" />
               </button>
-              <button className="btn-secondary flex items-center gap-2">
+              <a
+                href="public/cv.pdf"
+                download="Mon-CV.pdf"
+                className="btn-secondary flex items-center gap-2 text-decoration-none"
+              >
                 <Download className="w-4 h-4" /> Télécharger CV
-              </button>
+              </a>
             </div>
 
             {/* Réseaux sociaux */}
@@ -100,7 +104,10 @@ export default function MainHero() {
                   <Linkedin className="w-5 h-5" />
                 </a>
 
-                <a href="mailto:elabadoudrame2001@gmail.com" className="social-btn">
+                <a
+                  href="mailto:elabadoudrame2001@gmail.com"
+                  className="social-btn"
+                >
                   <Mail className="w-5 h-5" />
                 </a>
               </div>

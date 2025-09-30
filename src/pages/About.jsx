@@ -12,7 +12,6 @@ import {
 } from "lucide-react";
 import avatarImage from "../assets/avatar.png";
 
-
 export default function About() {
   const qualities = [
     {
@@ -134,10 +133,13 @@ export default function About() {
               ))}
             </div>
 
-            <button className="group bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-light)] text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 flex items-center gap-3">
-              <Download className="w-5 h-5 group-hover:animate-bounce" />
-              Télécharger mon CV
-            </button>
+            <a
+              href="public/cv.pdf"
+              download="Mon-CV.pdf"
+              className="btn-secondary flex items-center gap-2 text-decoration-none"
+            >
+              <Download className="w-4 h-4" /> Télécharger CV
+            </a>
           </div>
         </div>
 
