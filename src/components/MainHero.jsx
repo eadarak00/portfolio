@@ -25,7 +25,11 @@ export default function MainHero() {
       <section className="relative min-h-screen flex items-center px-4 sm:px-6 lg:px-20 pt-20">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Texte */}
-          <div className={`space-y-6 text-center lg:text-left ${isVisible ? "fade-in-up" : ""}`}>
+          <div
+            className={`space-y-6 text-center lg:text-left ${
+              isVisible ? "fade-in-up" : ""
+            }`}
+          >
             <p className="text-base sm:text-lg lg:text-xl font-medium text-[var(--color-gray-light)]">
               Bonjour, je suis
             </p>
@@ -39,7 +43,13 @@ export default function MainHero() {
               <span className="hero-gradient-text">
                 <Typewriter
                   options={{
-                    strings: ["Java", "ReactJS", "Angular", "Python", "Spring Boot"],
+                    strings: [
+                      "Java",
+                      "ReactJS",
+                      "Angular",
+                      "Python",
+                      "Spring Boot",
+                    ],
                     autoStart: true,
                     loop: true,
                     delay: 70,
@@ -50,9 +60,10 @@ export default function MainHero() {
             </div>
 
             <p className="text-sm sm:text-base lg:text-lg text-[var(--color-gray-light)] max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              Je construis des applications modernes et robustes avec une approche centrée
-              sur l'utilisateur. Passionné par les technologies de pointe, je transforme vos
-              idées en solutions digitales performantes.
+              Je construis des applications modernes et robustes avec une
+              approche centrée sur l'utilisateur. Passionné par les technologies
+              de pointe, je transforme vos idées en solutions digitales
+              performantes.
             </p>
 
             {/* Boutons CTA */}
@@ -71,13 +82,25 @@ export default function MainHero() {
                 Me suivre :
               </span>
               <div className="flex gap-3">
-                <a href="https://github.com/eadarak00" className="social-btn">
+                <a
+                  href="https://github.com/eadarak00"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-btn"
+                >
                   <Github className="w-5 h-5" />
                 </a>
-                <a href="#" className="social-btn">
+
+                <a
+                  href="https://www.linkedin.com/in/elhadji-abdou-drame"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-btn"
+                >
                   <Linkedin className="w-5 h-5" />
                 </a>
-                <a href="#" className="social-btn">
+
+                <a href="mailto:elabadoudrame2001@gmail.com" className="social-btn">
                   <Mail className="w-5 h-5" />
                 </a>
               </div>
@@ -85,7 +108,11 @@ export default function MainHero() {
           </div>
 
           {/* Image */}
-          <div className={`flex justify-center lg:justify-end ${isVisible ? "fade-in-up" : ""}`}>
+          <div
+            className={`flex justify-center lg:justify-end ${
+              isVisible ? "fade-in-up" : ""
+            }`}
+          >
             <div className="relative">
               <div
                 className="w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden p-1"
