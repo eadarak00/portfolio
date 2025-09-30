@@ -9,7 +9,6 @@ const featuredProjects = [
       "Projet de fin de Master 1 : Application web (Spring Boot, ReactJS, PostgreSQL) facilitant l’accès au logement étudiant via une plateforme centralisée d’offres.",
     link: "/projets/campusloc",
     tags: ["React", "Spring Boot", "PostgreSQL"],
-    featured: true,
   },
   {
     title: "Inscriptions pédagogiques",
@@ -17,7 +16,6 @@ const featuredProjects = [
       "Développement d’une application de gestion des inscriptions avec Java & Swing, simplifiant et automatisant le parcours étudiant.",
     link: "/projets/inscriptions",
     tags: ["Java", "Swing"],
-    featured: false,
   },
   {
     title: "API de réservation",
@@ -26,7 +24,6 @@ const featuredProjects = [
     link: "/projets/api-reservation",
     cover: defaultCover,
     tags: ["Spring Boot", "REST API"],
-    featured: false,
   },
 ];
 
@@ -56,14 +53,6 @@ export default function FeaturedProjects() {
               key={idx}
               className="group relative bg-[var(--color-white)] rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 flex flex-col"
             >
-              {/* Featured Badge */}
-              {project.featured && (
-                <div className="absolute top-4 right-4 z-20 bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-light)] text-white px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1 shadow-lg">
-                  <Star className="w-3 h-3 fill-current" />
-                  En vedette
-                </div>
-              )}
-
               {/* Image Container with Overlay */}
               <div className="relative h-48 w-full overflow-hidden bg-gray-200">
                 <img
