@@ -369,7 +369,7 @@ export default function Projects() {
   };
 
   return (
-    <section id="projects" className="max-w-7xl mx-auto px-6 py-20" style={{ backgroundColor: 'var(--color-bg)' }}>
+    <section id="projects" className="max-w-7xl mx-auto px-6 py-20">
       {/* En-tête avec design amélioré */}
       <div className="text-center mb-20">
         <div className="inline-block relative">
