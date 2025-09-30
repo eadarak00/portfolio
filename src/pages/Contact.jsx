@@ -1,4 +1,10 @@
+import UnderConstruction from "../components/EnConstruction";
+
 export default function Contact() {
-    return <h1>Bienvenue sur mon portfolio</h1>;
+    return (
+        <>
+        <UnderConstruction/>
+        </>
+    );
 }
   
