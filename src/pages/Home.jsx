@@ -1,3 +1,4 @@
+import FeaturedProjects from "../components/FeaturedProjects";
 import MainHero from "../components/MainHero";
 import Stack from "../components/Stack";
 
@@ -7,6 +8,7 @@ export default function HomePage() {
     <main className="main-hero">
       <MainHero/>
       <Stack/>
+      <FeaturedProjects/>
     </main>
   );
 }

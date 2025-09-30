@@ -11,7 +11,7 @@ export default function Header() {
     { to: "/about", label: "À propos" },
     { to: "/experiences", label: "Expériences" },
     { to: "/competences", label: "Compétences" },
-    { to: "/projects", label: "Projets" },
+    { to: "/projets", label: "Projets" },
     { to: "/certifications", label: "Certifications" },
     { to: "/contact", label: "Contact" },
   ];
