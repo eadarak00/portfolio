@@ -16,14 +16,6 @@ export default function Header() {
     { to: "/contact", label: "Contact" },
   ];
 
-  const colors = {
-    primary: "text-[var(--color-primary)]",
-    primaryHover: "hover:text-[var(--color-primary-hover)]",
-    textDefault: "text-gray-300",
-    bgMobile: "bg-[var(--color-bg)]",
-    hoverBgMobile: "hover:bg-white/5",
-  };
-
   // Bloquer le scroll en arrière-plan quand menu mobile est ouvert
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "auto";
@@ -36,7 +28,7 @@ export default function Header() {
           {/* Logo */}
           <NavLink
             to="/"
-            className={`logo-text text-2xl font-bold tracking-wide ${colors.primary} hover:opacity-80 transition`}
+            className="logo-text text-2xl font-bold tracking-wide text-[var(--color-primary)] hover:opacity-80 transition"
           >
             MonPortfolio
           </NavLink>
@@ -50,8 +42,10 @@ export default function Header() {
                 end={item.end}
                 className={({ isActive }) =>
                   `relative font-medium transition links ${
-                    isActive ? colors.primary : colors.textDefault
-                  } ${colors.primaryHover}`
+                    isActive
+                      ? "text-[var(--color-primary)] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-0.5 after:bg-[var(--color-primary)]"
+                      : "text-gray-300 hover:text-[var(--color-primary)]"
+                  }`
                 }
               >
                 {item.label}
@@ -77,7 +71,7 @@ export default function Header() {
       <div
         className={`fixed top-16 left-0 w-full h-[calc(100vh-4rem)] md:hidden transform transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "-translate-x-full"
-        } ${colors.bgMobile}`}
+        } bg-[var(--color-bg)]`}
       >
         <nav className="flex flex-col px-6 py-6 space-y-4">
           {navItems.map((item, index) => (
@@ -87,10 +81,10 @@ export default function Header() {
               end={item.end}
               onClick={() => setIsOpen(false)}
               className={({ isActive }) =>
-                `block rounded-lg px-4 py-2 font-medium transition links ${
+                `block rounded-lg px-4 py-2 font-medium transition ${
                   isActive
-                    ? `${colors.primary} ${colors.hoverBgMobile}`
-                    : `text-gray-300 ${colors.primaryHover} ${colors.hoverBgMobile}`
+                    ? "bg-[var(--color-primary)] text-white"
+                    : "text-gray-300 hover:text-[var(--color-primary)] hover:bg-white/5"
                 }`
               }
             >
@@ -102,4 +96,3 @@ export default function Header() {
     </header>
   );
 }
-
