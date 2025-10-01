@@ -11,6 +11,7 @@ import {
   BookOpen,
 } from "lucide-react";
 import avatarImage from "../assets/avatar.png";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function About() {
   const qualities = [
@@ -71,7 +72,6 @@ export default function About() {
                   <LazyLoadImage
                     src={avatarImage}
                     alt="Photo de profil"
-                    // effect="blur"
                     className="w-full h-full object-cover rounded-full"
                   />
                 </div>
