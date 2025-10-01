@@ -135,7 +135,7 @@ export default function About() {
             </div>
 
             <a
-              href="public/cv.pdf"
+              href="/cv.pdf"
               download="Mon-CV.pdf"
               className="btn-secondary flex items-center gap-2 text-decoration-none"
             >
