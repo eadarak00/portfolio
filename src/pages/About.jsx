@@ -68,9 +68,10 @@ export default function About() {
                 style={{ background: "var(--gradient)" }}
               >
                 <div className="w-full h-full bg-gray-300 rounded-full flex items-center justify-center text-gray-600 text-lg font-semibold">
-                  <img
+                  <LazyLoadImage
                     src={avatarImage}
                     alt="Photo de profil"
+                    effect="blur"
                     className="w-full h-full object-cover rounded-full"
                   />
                 </div>
