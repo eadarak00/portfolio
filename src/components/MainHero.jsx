@@ -69,9 +69,12 @@ export default function MainHero() {
 
             {/* Boutons CTA */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <button className="btn-primary flex items-center gap-2">
+              <Link
+                to="/projets"
+                className="btn-primary flex items-center gap-2 text-decoration-none "
+              >
                 Voir mes projets <ExternalLink className="w-4 h-4" />
-              </button>
+              </Link>
               <a
                 href="/cv.pdf"
                 download="Mon-CV.pdf"
