@@ -12,6 +12,7 @@ import Typewriter from "typewriter-effect";
 import avatarImage from "../assets/avatar.png";
 import "../styles/mainhero.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { Link } from "react-router-dom";
 
 export default function MainHero() {
   const [isVisible, setIsVisible] = useState(false);
@@ -132,7 +133,7 @@ export default function MainHero() {
                 <LazyLoadImage
                   src={avatarImage}
                   alt="Photo de profil"
-                  effect="blur"
+                  // effect="blur"
                   className="w-full h-full object-cover rounded-full"
                 />
               </div>
