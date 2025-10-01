@@ -133,7 +133,7 @@ export default function MainHero() {
                 <LazyLoadImage
                   src={avatarImage}
                   alt="Photo de profil"
-                  // effect="blur"
+                  effect="blur"
                   className="w-full h-full object-cover rounded-full"
                 />
               </div>

@@ -28,7 +28,7 @@ export default function Header() {
           {/* Logo */}
           <NavLink
             to="/"
-            className="logo-text text-2xl font-bold tracking-wide text-[var(--color-primary)] hover:opacity-80 transition"
+            className="logo-text text-2xl font-bold tracking-wide text-[var(--color-black)] hover:opacity-80 transition"
           >
             MonPortfolio
           </NavLink>
@@ -44,7 +44,7 @@ export default function Header() {
                   `relative font-medium transition links ${
                     isActive
                       ? "text-[var(--color-primary)] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-0.5 after:bg-[var(--color-primary)]"
-                      : "text-gray-300 hover:text-[var(--color-primary)]"
+                      : "text-black-300 hover:text-[var(--color-primary)]"
                   }`
                 }
               >
@@ -84,7 +84,7 @@ export default function Header() {
                 `block rounded-lg px-4 py-2 font-medium transition ${
                   isActive
                     ? "bg-[var(--color-primary)] text-white"
-                    : "text-gray-300 hover:text-[var(--color-primary)] hover:bg-white/5"
+                    : "text-black-300 hover:text-[var(--color-primary)] hover:bg-white/5"
                 }`
               }
             >
